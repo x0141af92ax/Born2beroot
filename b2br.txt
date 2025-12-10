@@ -1,0 +1,91 @@
+apt :
+apt update
+apt install sudo
+apt install openssh service
+apt install ufw
+apt install libpam-pwquality
+--------------------
+
+SSH:
+nano /etc/ssh/sshd_config
+editing the port
+disabling logging in as rootsts
+systemctl status ssh
+--------------------
+
+UFW:
+ufw enable
+ufw status
+--------------------
+
+Hostname:
+hostname
+nano /etc/hostname
+nano /etc/hosts
+reboot
+hostname
+--------------------
+
+Password:
+nano /etc/pam.d/common-password
+adding the rules
+--------------------
+
+Groups:
+addgroup user42
+adduser rsbaa sudo
+adduser rsbaa user42
+getent group sudo user42
+--------------------
+
+following requirements:
+password policy : nano etc/pam.d/common-password
+password expiration : nano etc/login.defs
+sudo policies : visudo
+--------------------
+
+AppArmor:
+apt install apparmor apparmor-utils
+systemctl enable apparmor
+systemctl start apparmor
+aa-status
+--------------------
+
+changing password:
+passwd rsbaa
+
+
+_________________________________________________________________________
+
+
+Why did you choose Debian?
+beginner friendly.
+
+diff between centos and Debian?
+Debian is a distro of Linux, stable, used in servers a lot, getting less updates, uses apt, suitable for people who are new to Linux world.
+CentOs is a distro from red hat enterprise Linux, stable, used in companies, more updates than Linux especially in security, uses YUM, suitable for companies.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
