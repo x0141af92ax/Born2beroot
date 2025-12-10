@@ -68,6 +68,6 @@ Since this is a System Administration project, there is no source code to compil
 
 **AI Usage:**
 AI assistance was utilized during the development of this project for the following tasks:
-*   **Conceptual Understanding:** Explaining the differences between LVM layers (PV, VG, LV) and the boot process (MBR vs GPT).
+*   **Conceptual Understanding:** Explaining the differences between LVM layers (PV, VG, LV) and the boot process (MBR).
 *   **Scripting:** Assisting with `awk` and `grep` syntax for the `monitoring.sh` script to parse system resources correctly.
 *   **Troubleshooting:** Debugging syntax errors in the `pam_pwquality` configuration and resolving network issues related to SSH port forwarding.
